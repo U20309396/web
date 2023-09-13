@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>contactenos</title>
+    <style>
+        body {
+            background-color: blueviolet;
+        }
+        .container{
+            display: flex;
+            background-color: #fff;
+            height: 750px;
+            width: 1000px;
+            box-shadow: 0 0 20px rgba(0, 0,0, 4);
+            margin: auto;
+            margin-top: 150px;
+            border-radius: 25px;
+        }
+        .form{
+            padding: 30px 80px;
+            width: 50%;
+            flex-direction: column;
+        }
+      
+        label {
+            font-size: 15px;
+            color:#969EAE;
+            margin-bottom: 15px;
+        }
+        .box{
+            border:0;
+            background-color: #F4F4FD;
+            padding: 15px;
+            border-radius: 25px;
+            margin-bottom: 25px;
+            outline: nome;
+        }
+        .botonenviar{
+            background-color: #817ffe;
+            border:0;
+            padding: 15px;
+            color: #fff;
+            font-size: 16px;
+            border-radius:25px;
+            width: 250px;;
+            margin-top: 15px;
+            box-shadow: 0 0 20px rgba(201, 199, 253, 0.5);
+        }
+        .botonlimpiar{
+            background-color: #817ffe;
+            border:0;
+            padding: 15px;
+            color: #fff;
+            font-size: 16px;
+            border-radius:25px;
+            width: 250px;;
+            margin-top: 25px;
+            box-shadow: 0 0 20px rgba(201, 199, 253, 0.5);
+
+        }
+        .informacion{
+            padding: 50px;
+        }
+        .img-1{
+            width: 350px;
+            margin-bottom: 75px;
+        }
+        .ubicacion{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 31px;
+        }
+        .icons img{
+            width: 20px;
+            margin-right: 10px;
+        }
+        .icons p {
+            font-size: 14px;
+            color: #969EAE;
+        }
+
+        
+    </style>
+</head>
+<body>
+<div class="container">
+    <form class="form">
+        <h2>Nos ponemos en contacto contigo</h2>
+        <label for="nombres">Nombres:</label>
+        <input type="text" id="nombres" name="nombres" required><br><br>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos" required><br><br>
+
+        <label for="dni">Número de DNI:</label>
+        <input type="text" id="dni" name="dni" required><br><br>
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" required><br><br>
+
+        <label for="celular">Número de Celular:</label>
+        <input type="tel" id="celular" name="celular" required><br><br>
+
+        <label for="estado_civil">Estado Civil:</label>
+        <select id="estado_civil" name="estado_civil">
+            <option value="soltero">Soltero/a</option>
+            <option value="casado">Casado/a</option>
+            <option value="divorciado">Divorciado/a</option>
+            <option value="viudo">Viudo/a</option>
+        </select><br><br>
+
+        <label for="tipo_mensaje">Tipo de Mensaje:</label>
+        <input type="radio" id="consulta" name="tipo_mensaje" value="consulta" required>
+        <label for="consulta">Consulta</label>
+        <input type="radio" id="solicitud" name="tipo_mensaje" value="solicitud">
+        <label for="solicitud">Solicitud</label>
+        <input type="radio" id="reclamo" name="tipo_mensaje" value="reclamo">
+        <label for="reclamo">Reclamo</label><br><br>
+
+        <label for="asunto">Asunto:</label>
+        <input type="text" id="asunto" name="asunto" required><br><br>
+
+        <label for="mensaje">Cuerpo del Mensaje:</label><br>
+        <textarea class="box" id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Enviar" class="botonenviar">
+        <input type="reset" value="Limpiar" class="botonlimpiar">>
+    </form>
+    <div class="informacion">
+        <img src="imagenes/info-1.svg" alt="" class="img-1">
+        <div class="ubicacion">
+            <div class="icons">
+                <img src="imagenes/gps.svg" alt="">
+                <p> Cayma Enace 1</p>
+            </div>
+
+            <div class="icons">
+                <img src="imagenes/number.svg" alt="">
+                <p> 949389285</p>
+            </div>
+
+            <div class="icons">
+                <img src="imagenes/email.svg" alt="">
+                <p> yamelymachaccaz.28@gamil.com</p>
+            </div>
+
+        </div>
+        
+
+    </div>
+</div>
+</body>
+</html>
